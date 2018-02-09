@@ -1,0 +1,45 @@
+$white:white;
+$containerBgColor: #333;
+$leftBgColor:rgba(223,39,39,0.7);
+$leftButtonHoverColor:rgba(161,11,11,0.3);
+$rightBgColor:rgba(43,43,43,0.8);
+$rightButtonHoverColor:rgba(92,92,92,0.3);
+$hoverWidth:75%;
+$otherWidth:25%;
+$speed:1000ms;
+
+html,body{
+  padding:0;
+  margin:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x:hidden
+}
+
+h1{
+  font-size: 4rem;
+  color: $white;
+  position: absolute;
+  left:50%;top:20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+button{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  height:2.5rem;
+  padding-top:1.3rem;
+  width:15rem;
+  text-align: center;
+  color:$white;
+  border:$white solid 0.2rem;
+  font-size: 1rem;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%)
+}
