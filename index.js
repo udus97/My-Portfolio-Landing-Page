@@ -10,7 +10,7 @@ left.addEventListener('mouseleave', function () {
   container.classList.remove('hover-left')
 });
 
-rightt.addEventListener('mouseenter', function () {
+right.addEventListener('mouseenter', function () {
   container.classList.add('hover-right')
 });
 

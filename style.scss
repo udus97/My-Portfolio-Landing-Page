@@ -44,12 +44,12 @@ h1{
   transform: translateX(-50%)
 }
 
-.split .left .button:hover{
+.split.left .button:hover{
   background-color: $leftButtonHoverColor;
   border-color: $leftButtonHoverColor;
 }
 
-.split .right .button:hover{
+.split.right .button:hover{
   background-color: $rightButtonHoverColor;
   border-color: $rightButtonHoverColor;
 }
@@ -96,3 +96,28 @@ h1{
   background:$rightBgColor
 }
 
+.split.left,.split.right,.split.left:before,.split.right:before{
+  transition: $speed all ease-in-out
+}
+
+.hover-left .left{
+  width:$hoverWidth;
+}
+.hover-left .right{
+  width:$otherWidth;
+}
+
+.hover-left .right:before{
+  z-index:2;
+}
+
+.hover-right .right{
+  width:$hoverWidth;
+}
+.hover-right .left{
+  width:$otherWidth;
+}
+
+.hover-right .left:before{
+  z-index:2;
+  }
