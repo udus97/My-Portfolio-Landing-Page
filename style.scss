@@ -26,7 +26,7 @@ h1{
   white-space: nowrap;
 }
 
-button{
+.button{
   position: absolute;
   left: 50%;
   top:50%;
@@ -43,3 +43,56 @@ button{
   text-decoration: none;
   transform: translateX(-50%)
 }
+
+.split .left .button:hover{
+  background-color: $leftButtonHoverColor;
+  border-color: $leftButtonHoverColor;
+}
+
+.split .right .button:hover{
+  background-color: $rightButtonHoverColor;
+  border-color: $rightButtonHoverColor;
+}
+
+.container{
+  position: relative;
+  width:100%;
+  height:100%;
+  background:$containerBgColor;
+}
+
+.split{
+  position:absolute;
+  width:50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left{
+  left:0;
+  background:url('img/') center center no-repeat;
+  background-size: cover;
+}
+
+.split.left:before{
+  position:absolute;
+  content:'';
+  width: 100%;
+  height:100%;
+  background:$leftBgColor
+}
+
+.split.right{
+  right:0;
+  background:url('img/') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before{
+  position:absolute;
+  content:'';
+  width: 100%;
+  height:100%;
+  background:$rightBgColor
+}
+
